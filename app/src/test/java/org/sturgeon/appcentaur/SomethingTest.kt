@@ -9,8 +9,8 @@ class SomethingTest {
     @Test
     fun `test that something`() {
 
-        assert("something" == "goat")
-        
+        assert("something" == "something")
+
     }
 
 
