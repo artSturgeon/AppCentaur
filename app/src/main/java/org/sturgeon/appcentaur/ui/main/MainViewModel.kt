@@ -8,6 +8,8 @@ class MainViewModel : ViewModel() {
 
     fun thing() {
         Analytics.trackEvent("Something happened!")
+
+        throw Exception("end of the world")
     }
 
 }
