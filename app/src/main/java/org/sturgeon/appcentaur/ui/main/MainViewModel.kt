@@ -5,11 +5,16 @@ import com.microsoft.appcenter.analytics.Analytics
 
 class MainViewModel : ViewModel() {
 
+    private lateinit var horse: String
 
-    fun thing() {
+    fun walkBackwards(): String {
         Analytics.trackEvent("Something happened!")
 
-        throw Exception("end of the world")
+        return horse.reversed()
+    }
+
+    fun eventor() {
+        Analytics.trackEvent("Eventor ! ! !")
     }
 
 }
