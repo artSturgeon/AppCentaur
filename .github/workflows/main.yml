@@ -13,7 +13,7 @@ jobs:
       - name: checkout the code
         uses: actions/checkout@v2
       - name: generate the report
-        run: ./gradlew testDebugUnitTest
+        run: ./gradlew testDebugUnitTestCoverage
       - name: Publish Unit Test Results
         uses: EnricoMi/publish-unit-test-result-action@v1.7
         if: always()
